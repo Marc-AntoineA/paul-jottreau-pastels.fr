@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <div class='wrapper'>
+    <div id='title'>
+        <h1><span>Paul Jottreau</span></h1>
+        <p>Pastelliste sur Parthenay, Deux-Sèvres</p>
+    </div>
+    <div class='portrait' id='portrait-right'>
+      <!-- https://davidwalsh.name/css-flip -->
+      <div class='crop'>
+        <img src='images/fougere.jpg'/>
+      </div>
+    </div>
+    <div class='landscape' id='two'>
+      <div class='crop'>
+        <img src='images/fruits.JPG'/>
+      </div>
+    </div>
+    <div class='landscape' id='five'>
+      <div class='crop'>
+        <img src='images/lesQuais.JPG'/>
+      </div>
+    </div>
+    <div class='portrait' id='portrait-left'>
+      <div class='crop'>
+        <img src='images/barque.jpg'/>
+      </div>
+    </div>
+    <div id='contact-box' class="flip-container landscape"
+      ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+    		<div class="front">
+          <div class='crop'>
+    			     <img id='artiste-picture' src='images/artiste.JPG'/>
+          </div>
+        </div>
+    		<div class="back">
+          <div class='quote'>«&nbsp;Il y a bien longtemps que j'aime manier les couleurs et jouer du pastel...&nbsp;»
+          </div>
+        </div>
+    	</div>
+    </div>
+
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
